@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/pic"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="-60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:padding="4dp"
+        android:background="#FBF9F9"
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="34dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/res_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Menu 1"
+                    android:textColor="#3c3c3b"
+                    android:textSize="29dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="cuisines : "/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="9dp">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="10dp"
+                            android:src="@mipmap/stra" />
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:src="@mipmap/stra" />
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="10dp"
+                            android:src="@mipmap/stra"
+                            android:layout_marginLeft="2dp"/>
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="10dp"
+                            android:src="@mipmap/stra"
+                            android:layout_marginLeft="2dp"/>
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="10dp"
+                            android:src="@mipmap/stra"
+                            android:layout_marginLeft="2dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ratings"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#6A90B5"
+                                android:textSize="20dp"
+                                android:text="2.0"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DF6A90B5"
+                                android:text="    rating    "
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:src="@mipmap/slash" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="2dp">
+
+                            <TextView
+                                android:id="@+id/costs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="200"
+                                android:textColor="#6A90B5"
+                                android:textSize="20dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="cost for two"
+                                android:textSize="14dp"
+                                android:textColor="#EE6A90B5"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taste the Food at :"
+                    android:padding="2dp"
+                    android:textColor="#ec6611"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="address of the restaurant"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Our Restaurant : "
+                    android:padding="2dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#ec6611"/>
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Dining out presents a great opportunity to unwind, relax and enjoy a delicious meal in a great atmosphere. While this is what most people are looking for when they decide to dine out, it is not always what they get. There are some very good restaurants, but unfortunately, they are few and far between. People will always make a return visit when they enjoy the dining experience and it is to everyone’s advantage for the restaurant to up its game! "/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/angry_btn"
+                    android:gravity="center"
+                    android:text="Navigate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#203B42"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
