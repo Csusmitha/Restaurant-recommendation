@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/till"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp7"
+    tools:context=".Introduction">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="658dp"
+        android:layout_above="@id/nret_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="8dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:padding="2dp"
+        android:id="@+id/nret_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="#88F69292"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:drawableTint="@color/gradient_start_color"
+        android:text="next"
+        android:textColor="@color/colorTransparentWhite" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/nret_button"
+        android:layout_toLeftOf="@+id/nret_button"
+        app:tabBackground="@drawable/indicator_selector">
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:padding="6dp"
+        android:background="@drawable/button_gradient_style"
+        android:id="@+id/lats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="640dp"
+        android:layout_marginBottom="97dp"
+        android:gravity="center_horizontal|top"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textColor="#88F69292" />
+
+</RelativeLayout>
